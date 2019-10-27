@@ -1,0 +1,19 @@
+{
+  "name": "exchangerate",
+  "connector": "rest",
+  "options": {
+     "headers": {
+         "accept": "application/json",
+         "content-type": "application/json"
+     }
+  },
+  "operations": [{
+     "template": {
+        "method": "GET",
+        "url": "https://api.exchangeratesapi.io/latest?base={base}"
+     },
+     "functions": {
+        "getdata": ["base"]
+     }
+  }]
+}
