@@ -14,7 +14,7 @@ export class ExchangeRateController {
     return this.exchangeRateService.getdata();
   }
   @get('/exchangerate/{base}')
-  getone(@param.path.string('base') base: string) {
+  get(@param.path.string('base') base: string) {
     return this.exchangeRateService.getdata(base);
   }
 }
