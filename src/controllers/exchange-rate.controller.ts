@@ -9,11 +9,11 @@ export class ExchangeRateController {
     @inject('services.ExchangeRate')
     private exchangeRateService: ExchangeRateService,
   ) {}
-  @get('/exchangerate')
+  @get('/exchange-rate')
   getall() {
     return this.exchangeRateService.getdata();
   }
-  @get('/exchangerate/{base}')
+  @get('/exchange-rate/{base}')
   get(@param.path.string('base') base: string) {
     return this.exchangeRateService.getdata(base);
   }
