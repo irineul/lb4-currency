@@ -8,4 +8,5 @@
 `npm run build`
 
 curl -X GET http://localhost:3000/exchange-rate
+
 curl -X GET http://localhost:3000/exchange-rate/BRL
